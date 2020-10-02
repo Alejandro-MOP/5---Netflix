@@ -48,6 +48,19 @@ a {
     margin: 0 auto;
 }
 
+.alerta{
+    color: $secundario;
+    display: block;
+    margin-bottom: .2rem;
+    padding: .2rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+input.no-valido {
+    border-bottom: 3px solid $secundario!important;
+}
+
 .logotipo {
     position: relative; /*para dejar el tono obscurecido detras*/
     margin-top: 0.5rem;
@@ -83,12 +96,30 @@ form {
         position: relative;
         margin-bottom: 0.8rem;
 
+        span {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+            font-weight: bold;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
         label {
             position: absolute;
             top: 1.1rem;
             left: 1rem;
             font-size: 0.9rem;
             transition: font-size 0.3s ease, top 0.2s ease;
+
+            &.valido{
+                font-size: .6rem;
+                top: .5rem;
+            }
         }
         input {
             flex: 1;
@@ -96,6 +127,7 @@ form {
             border: none;
             background-color: $gris;
             border-radius: $radius;
+            color: $blanco;
 
             &:focus {
                 background-color: $gris3;

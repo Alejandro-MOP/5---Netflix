@@ -55,6 +55,19 @@ a:hover {
   margin: 0 auto;
 }
 
+.alerta {
+  color: #E87C03;
+  display: block;
+  margin-bottom: .2rem;
+  padding: .2rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+input.no-valido {
+  border-bottom: 3px solid #E87C03 !important;
+}
+
 .logotipo {
   position: relative;
   /*para dejar el tono obscurecido detras*/
@@ -96,6 +109,19 @@ form .campo {
   margin-bottom: 0.8rem;
 }
 
+form .campo span {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+form .campo span:hover {
+  cursor: pointer;
+}
+
 form .campo label {
   position: absolute;
   top: 1.1rem;
@@ -104,12 +130,18 @@ form .campo label {
   transition: font-size 0.3s ease, top 0.2s ease;
 }
 
+form .campo label.valido {
+  font-size: .6rem;
+  top: .5rem;
+}
+
 form .campo input {
   flex: 1;
   padding: 1.3rem 1rem 0.7rem 1rem;
   border: none;
   background-color: #323232;
   border-radius: 5px;
+  color: #FFFFFF;
 }
 
 form .campo input:focus {
