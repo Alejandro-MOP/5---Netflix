@@ -20,3 +20,17 @@
 @mixin box-sizing($box-model){
     box-sizing: $box-model;
 }
+
+/*Botones*/
+@mixin boton($bgColor){
+    background-color: $bgColor;
+    color: $blanco;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: $radius;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
